@@ -11,6 +11,42 @@
 		<title>Astro</title>
 	</head>
 	<body>
-		<h1>Astro</h1>
+		<h1>mmmmmm</h1>
+		<img src="/slop.png" alt="sloppy pizza" />
+		<h2>Giuseppe's finest</h2>
 	</body>
 </html>
+
+<style>
+body {
+	background: #000;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	height: 100vh;
+	margin: 0;
+}
+
+img {
+	width: 100%;
+	max-height: 50vh;
+	/*object-fit: contain;*/
+}
+
+h1, h2 {
+	--outline-colour: white;
+	--outline-width: 0.2rem;
+
+	color: black;
+	font-family: Impact;
+	text-align: center;
+	font-size: 7rem;
+	text-shadow:
+		calc(-1 * var(--outline-width)) calc(-1 * var(--outline-width)) 0 var(--outline-colour),
+		var(--outline-width) calc(-1 * var(--outline-width)) 0 var(--outline-colour),
+		calc(-1 * var(--outline-width)) var(--outline-width) 0 var(--outline-colour),
+		var(--outline-width) var(--outline-width) 0 var(--outline-colour);
+}
+
+</style>
